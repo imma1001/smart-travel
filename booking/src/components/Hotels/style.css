@@ -1,0 +1,81 @@
+.hotel-wrapper {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    position: relative;
+    top: 100px; 
+  }
+  
+  .hotel-wrapper h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #161968;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0.5rem;
+    display: inline-block;
+  }
+  
+  .hotel-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .hotel-item {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .hotel-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .item-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .hotel-item:hover .item-overlay {
+    opacity: 1;
+  }
+  
+  .item-overlay h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .item-overlay p {
+    font-size: 1rem;
+  }
+  
